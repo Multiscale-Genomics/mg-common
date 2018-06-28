@@ -1,0 +1,14 @@
+[
+  "mg_common/tests/test_code_bam_utils.py::test_bam_copy", 
+  "mg_common/tests/test_code_bam_utils.py::test_bam_copy_failed", 
+  "mg_common/tests/test_code_bam_utils.py::test_bam_count_reads", 
+  "mg_common/tests/test_code_bam_utils.py::test_bam_count_reads_aligned", 
+  "mg_common/tests/test_code_bam_utils.py::test_bam_filter", 
+  "mg_common/tests/test_code_bam_utils.py::test_bam_index", 
+  "mg_common/tests/test_code_bam_utils.py::test_bam_merge_list", 
+  "mg_common/tests/test_code_bam_utils.py::test_bam_merge", 
+  "mg_common/tests/test_code_bam_utils.py::test_bam_list_chromosomes", 
+  "mg_common/tests/test_code_bam_utils.py::test_bam_sort", 
+  "mg_common/tests/test_code_bam_utils.py::test_bam_split", 
+  "mg_common/tests/test_code_bam_utils.py::test_sam_to_bam"
+]
