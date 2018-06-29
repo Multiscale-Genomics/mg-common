@@ -16,14 +16,14 @@
 Tools
 =====
 
-.. automodule:: mg_process_test.tool
+.. automodule:: mg_common.tool
 
    bam_utils
    ---------
-   .. autoclass:: mg_process_test.tool.bam_utils
+   .. autoclass:: mg_common.tool.bam_utils
       :members:
 
    common
    ------
-   .. autoclass:: mg_process_test.tool.common
+   .. autoclass:: mg_common.tool.common
       :members:
