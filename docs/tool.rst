@@ -18,7 +18,12 @@ Tools
 
 .. automodule:: mg_process_test.tool
 
-   Test Tool
-   -----------
-   .. autoclass:: mg_process_test.tool.testTool.testTool
+   bam_utils
+   ---------
+   .. autoclass:: mg_process_test.tool.bam_utils
+      :members:
+
+   common
+   ------
+   .. autoclass:: mg_process_test.tool.common
       :members:

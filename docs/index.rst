@@ -18,8 +18,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Documentation for Test Pipeline
-===============================
+Documentation for Common Utils
+==============================
 
 .. toctree::
    :caption: Table of Contents
@@ -27,7 +27,6 @@ Documentation for Test Pipeline
    :maxdepth: 2
 
    install
-   pipelines
    tool
    license
 
