@@ -16,7 +16,10 @@ env:
 
 # command to install dependencies
 install:
-    - pip install .
+    # Install APIs and Pipelines
+    - cd ${HOME}/build/Multiscale-Genomics/mg-common
+    - git status
+    - pip install --upgrade -e .
     - pip install -r requirements.txt
     - if [[ "$TESTENV" == "docs" ]]; then pip install sphinx;fi
     - if [[ "$TESTENV" == "pylint" ]]; then pip install pylint;fi
