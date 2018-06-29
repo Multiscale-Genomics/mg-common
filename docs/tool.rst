@@ -20,10 +20,17 @@ Tools
 
    bam_utils
    ---------
-   .. autoclass:: mg_common.tool.bam_utils
+   .. autoclass:: mg_common.tool.bam_utils.bamUtils
+      :members:
+
+   @Task Helper Functions
+   ^^^^^^^^^^^^^^^^^^^^^^
+   The following are helper functions for the bam_utils so that the functions can operate on tasks where the files are in COMPSs, but have not been retirned to the users workspace.
+
+   .. autoclass:: mg_common.tool.bam_utils.bamUtils
       :members:
 
    common
    ------
-   .. autoclass:: mg_common.tool.common
+   .. autoclass:: mg_common.tool.common.common
       :members:
