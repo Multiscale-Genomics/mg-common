@@ -1,6 +1,6 @@
 # mg-common
 
-[![Documentation Status](https://readthedocs.org/projects/mg-common/badge/?version=latest)](http://mg-common.readthedocs.io/en/latest/?badge=latest) [![Build Status](https://travis-ci.org/Multiscale-Genomics/mg-common.svg?branch=master)](https://travis-ci.org/Multiscale-Genomics/mg-common) [![Code Health](https://landscape.io/github/Multiscale-Genomics/mg-common/master/landscape.svg?style=flat)](https://landscape.io/github/Multiscale-Genomics/mg-common/master)
+[![Documentation Status](//readthedocs.org/projects/mg-common/badge/?version=latest)](https://mg-common.readthedocs.io/en/latest/?badge=latest) [![Build Status](https://travis-ci.org/Multiscale-Genomics/mg-common.svg?branch=master)](https://travis-ci.org/Multiscale-Genomics/mg-common) [![Code Health](https://landscape.io/github/Multiscale-Genomics/mg-common/master/landscape.svg?style=flat)](https://landscape.io/github/Multiscale-Genomics/mg-common/master)
 
 Example pipelines file that is ready to run in the VRE matching the code in the HowTo documentation.
 
