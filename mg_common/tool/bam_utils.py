@@ -358,7 +358,8 @@ class bamUtils(object):  # pylint: disable=invalid-name,useless-object-inheritan
         return output
 
 
-class bamUtilsTask(object):  # pylint: disable=invalid-name
+# Object inheritance is required for py2 compatiblity
+class bamUtilsTask(object):  # pylint: disable=invalid-name,useless-object-inheritance
     """
     Wrappers so that the function above can be used as part of a @task within
     COMPSs avoiding the files being copied around the infrastructure too many
