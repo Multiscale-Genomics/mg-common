@@ -24,7 +24,7 @@ from utils import logger
 
 
 # Object inheritance is required for py2 compatiblity
-class cd(object):  # pylint: disable=too-few-public-methods, invalid-name, useless-object-inheritance
+class cd(object):  # pylint: disable=too-few-public-methods, invalid-name
     """
     Context manager for changing the current working directory
     """
@@ -42,7 +42,7 @@ class cd(object):  # pylint: disable=too-few-public-methods, invalid-name, usele
 
 
 # Object inheritance is required for py2 compatiblity
-class common(object):  # pylint: disable=too-few-public-methods, invalid-name, useless-object-inheritance
+class common(object):  # pylint: disable=too-few-public-methods, invalid-name
     """
     Common functions that can be used generically across tools and pipelines
     """

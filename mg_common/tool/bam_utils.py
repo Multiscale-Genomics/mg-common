@@ -40,7 +40,7 @@ except ImportError:
 # ------------------------------------------------------------------------------
 
 # Object inheritance is required for py2 compatiblity
-class bamUtils(object):  # pylint: disable=invalid-name,useless-object-inheritance
+class bamUtils(object):  # pylint: disable=invalid-name
     """
     Tool for handling bam files
     """
@@ -60,6 +60,16 @@ class bamUtils(object):  # pylint: disable=invalid-name,useless-object-inheritan
             return pysam.view("-c", "-F", "260", bam_file).strip()  # pylint: disable=no-member
 
         return pysam.view("-c", bam_file).strip()  # pylint: disable=no-member
+
+    @staticmethod
+    def bam_paired_reads(bam_file):
+        """
+        Wrapper to test if a bam file contains paired end reads
+        """
+        paired_count = pysam.view("-c", "-f", "1", bam_file).strip()  # pylint: disable=no-member
+        if int(paired_count) > 0:
+            return True
+        return False
 
     @staticmethod
     def bam_sort(bam_file):
@@ -359,7 +369,7 @@ class bamUtils(object):  # pylint: disable=invalid-name,useless-object-inheritan
 
 
 # Object inheritance is required for py2 compatiblity
-class bamUtilsTask(object):  # pylint: disable=invalid-name,useless-object-inheritance
+class bamUtilsTask(object):  # pylint: disable=invalid-name
     """
     Wrappers so that the function above can be used as part of a @task within
     COMPSs avoiding the files being copied around the infrastructure too many
@@ -681,6 +691,25 @@ class bamUtilsTask(object):  # pylint: disable=invalid-name,useless-object-inher
             Location of the bam file that is to be indexed
         bam_idx_file : str
             Location of the bam index file (.bai)
+        """
+        bam_handle = bamUtils()
+        return bam_handle.bam_stats(bam_file)
+
+    @task(returns=bool, bam_file=FILE_IN)
+    def bam_paired_reads(self, bam_file):  # pylint: disable=no-self-use
+        """
+        Wrapper for the pysam SAMtools view function to identify if a bam file
+        contains paired end reads
+
+        Parameters
+        ----------
+        bam_file : str
+            Location of the bam file that is to be indexed
+
+        Returns
+        -------
+        bool
+            True if the bam file contains paired end reads
         """
         bam_handle = bamUtils()
         return bam_handle.bam_stats(bam_file)
