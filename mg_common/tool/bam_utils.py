@@ -40,7 +40,7 @@ except ImportError:
 # ------------------------------------------------------------------------------
 
 # Object inheritance is required for py2 compatiblity
-class bamUtils(object):  # pylint: disable=invalid-name, useless-object-inheritance
+class bamUtils(object):  # pylint: disable=invalid-name,useless-object-inheritance
     """
     Tool for handling bam files
     """

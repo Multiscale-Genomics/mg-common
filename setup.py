@@ -22,12 +22,12 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
-        'pytest', 'pytest-mock'
+        'pytest', 'pytest-mock', 'pylint', 'pysam', 'ConfigParser'
     ],
     setup_requires=[
         'pytest-runner',
     ],
     tests_require=[
-        'pytest', 'pytest-mock', 'pysam'
+        'pytest', 'pytest-mock', 'pysam', 'pylint'
     ],
 )

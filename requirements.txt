@@ -1,5 +1,1 @@
-pylint
-pytest-mock
-pysam
 git+https://github.com/Multiscale-Genomics/mg-tool-api.git
-ConfigParser
