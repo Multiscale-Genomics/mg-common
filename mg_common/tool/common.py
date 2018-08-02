@@ -23,7 +23,8 @@ import subprocess
 from utils import logger
 
 
-class cd(object):  # pylint: disable=too-few-public-methods, invalid-name
+# Object inheritance is required for py2 compatiblity
+class cd(object):  # pylint: disable=too-few-public-methods, invalid-name, useless-object-inheritance
     """
     Context manager for changing the current working directory
     """
@@ -40,7 +41,8 @@ class cd(object):  # pylint: disable=too-few-public-methods, invalid-name
         os.chdir(self.savedpath)
 
 
-class common(object):  # pylint: disable=too-few-public-methods, invalid-name
+# Object inheritance is required for py2 compatiblity
+class common(object):  # pylint: disable=too-few-public-methods, invalid-name, useless-object-inheritance
     """
     Common functions that can be used generically across tools and pipelines
     """
